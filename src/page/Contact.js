@@ -1,0 +1,1 @@
+import React from 'react' ;import { MdEmail} from "react-icons/md"; const Contact = () => { return ( <div className='Contact' id='تواصل معنا'> <h1>تواصل معنا</h1> <p>لا تتردد أبدا بالتواصل معنا و تزويدنا بأجمل المقترحات و الأفكار</p> <div className='support'> <MdEmail/> <a href='/'> support@kammun.com </a> </div> </div> ) } ;export default Contact

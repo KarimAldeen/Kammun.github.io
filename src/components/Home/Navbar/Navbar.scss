@@ -1,0 +1,67 @@
+.Navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 4vh 10vw;
+    z-index: 999;
+.nav_logo{
+    font-size: 1.4em; display: flex; font-weight: 800;
+   img {
+        height: 50px !important;
+        width: 40px;
+        object-fit: cover;
+    } 
+}
+    
+
+    .nav_items {
+        display: flex;
+        gap: 3vw;
+        align-items: center;
+        font-size: 1.4em;
+        flex-direction: row-reverse;
+        z-index: 999;
+
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.nav_toggle {
+    display: none;
+}
+.stickNavbar{
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    z-index: 99;
+    background-color: var(--Prim);
+
+}
+@include devices(laptop){
+    .Navbar{
+        justify-content: center;
+        padding: 4vh 0vh !important;
+
+        padding-top: 20px;
+        font-size: max(2.3vw, 1rem);
+        .nav_logo{
+            display: none !important;
+        }
+    }
+}
+@include devices (tablet){
+    .Navbar{
+        padding: 2vh 0vh !important;
+        box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+        font-size:  3vw !important;
+
+
+    }
+  
+   
+}
